@@ -19,9 +19,9 @@ function findIndices(list: number[], target: number): number[] | string {
             }
         })
 
-        const notFoundNumberSum: boolean = indexNumberSum !== -1
+        const foundNumberSum: boolean = indexNumberSum !== -1
 
-        if (notFoundNumberSum) {
+        if (foundNumberSum) {
             indices.push(indexCurrentNumber, indexNumberSum)
             return indices
         } else if (indexCurrentNumber === list.length) {
