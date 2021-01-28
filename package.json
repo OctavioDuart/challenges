@@ -6,7 +6,8 @@
   "scripts": {
     "dev:challange-find-index": "ts-node-dev src/findIndicesResult.ts",
     "dev:challange-is-valid-brackets": "ts-node-dev src/isValidBrackets.ts",
-    "dev:challange-find-higher-profit": "ts-node-dev src/findHigherProfit.ts"
+    "dev:challange-find-higher-profit": "ts-node-dev src/findHigherProfit.ts",
+    "dev:all-challanges": "ts-node-dev src/main.ts"
   },
   "devDependencies": {
     "ts-node": "^9.1.1",

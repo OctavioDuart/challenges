@@ -1,4 +1,4 @@
-function findIndices(list: number[], target: number): number[] | string {
+export const findIndices = (list: number[], target: number): number[] | string => {
 
     const everynumbersIsBigger: boolean = list.every(num => num > target)
 
@@ -30,3 +30,13 @@ function findIndices(list: number[], target: number): number[] | string {
     }
 }
 
+
+/* 
+    Para testar exclusivamente este método
+
+    Rodar script : yarn dev:challange-find-index 
+
+    Descomentar a linha abaixo
+*/
+
+// console.log(findIndices([2, 7, 11, 15], 9))

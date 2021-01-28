@@ -1,4 +1,4 @@
-function isValidBrackets(bracket: string): string {
+export const isValidBrackets = (bracket: string): string => {
 
     const stack = []
     for (let i = 0; i < bracket.length; i++) {
@@ -19,7 +19,17 @@ function isValidBrackets(bracket: string): string {
                 };
         }
     }
-    return !!stack.length ?  "NÃO" : "SIM";
+    return !!stack.length ? "NÃO" : "SIM";
 }
 
 
+
+/* 
+    Para testar exclusivamente este método
+ 
+    Rodar script : yarn dev:challange-is-valid-brackets 
+
+    Descomentar a linha abaixo
+*/
+
+//console.log(isValidBrackets('{[()]}'))
